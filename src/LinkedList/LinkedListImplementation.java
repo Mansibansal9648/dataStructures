@@ -29,4 +29,25 @@ public class LinkedListImplementation {
         }
     }
 
+    public void delete(int data){
+        if (head == null) {
+            System.out.println("List is Empty");
+        } else if(head.data==data){
+            head=head.next;
+        }else {
+            Node prev=null;
+            Node current=head;
+            while(current!=null && current.data!=data){
+                prev=current;
+                current=current.next;
+            }
+            if(current==null){
+                System.out.println("No element found in list");
+            }else{
+                prev.next=current.next;
+            }
+            }
+
+        }
+
 }
