@@ -13,5 +13,7 @@ public class LinkedListMain {
         linkedList.traverse();
         linkedList.delete(60);
         linkedList.traverse();
+        linkedList.search(15);
+        linkedList.search(90);
     }
 }
