@@ -62,5 +62,18 @@ public class LinkedListImplementation {
         }
     }
 
+    public void reverse() {
+        Node prev = null;
+        Node next = null;
+        Node current = head;
+        while (current != null) {
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+        head = prev;
+    }
+
 
 }

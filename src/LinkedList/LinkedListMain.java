@@ -8,6 +8,7 @@ public class LinkedListMain {
         linkedList.add(5);
         linkedList.add(15);
         linkedList.add(9);
+        linkedList.add(45);
         linkedList.traverse();
         linkedList.delete(5);
         linkedList.traverse();
@@ -15,5 +16,8 @@ public class LinkedListMain {
         linkedList.traverse();
         linkedList.search(15);
         linkedList.search(90);
+        System.out.println("Reversing the linked list");
+        linkedList.reverse();
+        linkedList.traverse();
     }
 }
