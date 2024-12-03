@@ -56,4 +56,17 @@ public class HeaderLinkedListImpl {
         }
     }
 
+    public void reverse(){
+        Node current= header.next;
+        Node prev=null;
+        Node next=null;
+        while(current!=null){
+           next=current.next;
+           current.next=prev;
+           prev=current;
+           current=next;
+        }
+        header.next=prev;
+    }
+
 }

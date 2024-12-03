@@ -16,5 +16,8 @@ public class HeaderLinkedListMain {
         headerLinkedList.traverse();
         headerLinkedList.search(98);
         headerLinkedList.search(75);
+        System.out.println("Reverse header linked list");
+        headerLinkedList.reverse();
+        headerLinkedList.traverse();
     }
 }
