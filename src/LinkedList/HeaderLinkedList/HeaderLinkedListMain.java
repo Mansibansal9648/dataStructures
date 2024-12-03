@@ -14,5 +14,7 @@ public class HeaderLinkedListMain {
         headerLinkedList.traverse();
         headerLinkedList.delete(78);
         headerLinkedList.traverse();
+        headerLinkedList.search(98);
+        headerLinkedList.search(75);
     }
 }

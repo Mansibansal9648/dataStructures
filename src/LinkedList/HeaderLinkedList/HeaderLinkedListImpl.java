@@ -43,4 +43,17 @@ public class HeaderLinkedListImpl {
             prev.next = current.next;
         }
     }
+
+    public void search(int data){
+        Node current = header.next;
+        while(current!=null && current.data!=data){
+            current=current.next;
+        }
+        if (current == null) {
+            System.out.println(data + " element not found in list");
+        } else {
+            System.out.println(data+ " element found in list");
+        }
+    }
+
 }
