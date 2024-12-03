@@ -6,8 +6,13 @@ public class HeaderLinkedListMain {
         headerLinkedList.traverse();
         headerLinkedList.add(10);
         headerLinkedList.add(30);
+        headerLinkedList.add(45);
         headerLinkedList.add(75);
         headerLinkedList.add(5);
+        headerLinkedList.traverse();
+        headerLinkedList.delete(30);
+        headerLinkedList.traverse();
+        headerLinkedList.delete(78);
         headerLinkedList.traverse();
     }
 }

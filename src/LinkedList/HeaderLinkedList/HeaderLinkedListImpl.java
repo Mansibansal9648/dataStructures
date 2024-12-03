@@ -30,4 +30,17 @@ public class HeaderLinkedListImpl {
         }
     }
 
+    public void delete(int data){
+        Node current = header.next;
+        Node prev=null;
+        while(current!=null && current.data!=data){
+            prev=current;
+            current=current.next;
+        }
+        if (current == null) {
+            System.out.println("No element found in list");
+        } else {
+            prev.next = current.next;
+        }
+    }
 }
