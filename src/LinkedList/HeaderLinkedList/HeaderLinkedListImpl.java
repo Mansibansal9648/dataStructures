@@ -16,17 +16,18 @@ public class HeaderLinkedListImpl {
         current.next = newNode;
     }
 
-    public void display(){
-        Node current=header.next;
-        if(current==null){
+    public void traverse() {
+        Node current = header.next;
+        if (current == null) {
             System.out.println("List is empty");
-        }else{
-            while(current!=null){
-                System.out.print(current.data+ " -> ");
-                current=current.next;
+        } else {
+            while (current != null) {
+                System.out.print(current.data + " -> ");
+                current = current.next;
 
             }
             System.out.println("null");
         }
     }
+
 }
