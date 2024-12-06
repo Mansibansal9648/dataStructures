@@ -67,4 +67,16 @@ public class CircularLinkedListImpl {
         System.out.println("No element found in list");
     }
 
+    public void search(int data) {
+        Node current = head;
+        do {
+            current = current.next;
+        }while (current != head && current.data != data);
+        if (current!=head) {
+            System.out.println(data + " element found in list");
+        } else {
+            System.out.println(data + " element not found in list");
+        }
+    }
+
 }

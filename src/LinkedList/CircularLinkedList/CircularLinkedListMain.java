@@ -15,5 +15,7 @@ public class CircularLinkedListMain {
         circularLinkedList.display();
         circularLinkedList.delete(91);
         circularLinkedList.display();
+        circularLinkedList.search(80);
+        circularLinkedList.search(32);
     }
 }
