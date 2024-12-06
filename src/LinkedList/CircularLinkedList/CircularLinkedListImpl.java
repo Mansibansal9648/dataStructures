@@ -79,4 +79,22 @@ public class CircularLinkedListImpl {
         }
     }
 
+    public void reverse() {
+        if(head==null || head.next==head){
+            return;
+        }
+        Node prev = null;
+        Node next = null;
+        Node current = head;
+        do{
+            next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }while (current != head);
+        tail=head;
+        tail.next=prev;
+        head = prev;
+    }
+
 }

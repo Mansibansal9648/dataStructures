@@ -17,5 +17,7 @@ public class CircularLinkedListMain {
         circularLinkedList.display();
         circularLinkedList.search(80);
         circularLinkedList.search(32);
+        circularLinkedList.reverse();
+        circularLinkedList.display();
     }
 }
